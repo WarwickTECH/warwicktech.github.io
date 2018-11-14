@@ -1,0 +1,123 @@
+html,body {
+  width: 100%;
+  height: 100%;
+  margin:0;
+  font:normal 75% Arial, Helvetica, sans-serif;
+}
+
+#particles-js {
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #0061A9;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+canvas {
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display: block;
+  vertical-align: bottom;
+}
+
+.box {
+  padding-top: 1.5%;
+  margin: auto;
+  text-align:center;
+}
+
+.social {
+  color: white;
+  width: 1em;
+  /* text-align: center;
+  list-style: none; */
+  margin: 5px 5px;
+  display: inline-block;
+  font-size: 20px;
+  border: 1px solid white;
+  border-radius: 100%;
+  text-decoration: none;
+  box-shadow: 0px 0px 2px #888;
+  padding: 0.5em 0.6em;
+  -webkit-transition: background-color 300ms ease;
+  -moz-transition: background-color 300ms ease;
+  transition: background-color 300ms ease;
+  cursor: pointer;
+  -webkit-animation: fadein 2s forwards; /* Safari, Chrome and Opera > 12.1 */
+  animation: fadein 2s forwards;
+}
+
+.social:hover, .social:active{
+  background-color: rgba(255, 255, 255, 0.075);
+}
+
+img.display {
+  /* max-width: 540px; */
+  width: 50%;
+  display: block;
+  height: auto;
+  margin: auto;
+  /* padding-top: 15%; */
+  -khtml-user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-animation: fadein 2s forwards; /* Safari, Chrome and Opera > 12.1 */
+  animation: fadein 2s forwards;
+}
+
+/* @media only screen and (max-width: 480px) {
+  img.display {
+    max-width: 340px;
+  }
+} */
+
+/* .box2{
+padding-top: 20%;
+} */
+
+
+@keyframes fadein {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.button {
+  color: white;
+  border: 1px solid white;
+  font-size: 17px;
+  padding: 10px 1.8%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  margin: 3px 6px;
+  margin-right: 3px;
+  display: inline-block;
+  text-decoration: none;
+  width: 130px;
+  background-color: rgba(255,255,255, 0);
+  box-shadow: 0px 0px 2px #888;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition: background-color 300ms ease;
+  -moz-transition: background-color 300ms ease;
+  transition: background-color 300ms ease;
+  cursor: pointer;
+  -khtml-user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-animation: fadein 2s forwards; /* Safari, Chrome and Opera > 12.1 */
+  animation: fadein 2s forwards;
+}
+
+.button:hover, .button:active {
+  background-color: rgba(255, 255, 255, 0.075);
+}

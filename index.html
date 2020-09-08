@@ -29,10 +29,26 @@
     <a href="https://www.linkedin.com/company/warwicktech" target="_blank" class="social linkedin"><i class="fab fa-linkedin-in"></i></a>
   </div>
   <div>
+  <div id='some-button' class='box' width="300">
+      <script>
+        document.getElementById("some-button").style.display = "none";
+
+        function showStuff() {
+            document.getElementById("some-button").style.display = "block";
+        }
+
+        // function myFunction() {
+        //     window.location = "project.html"
+        // }
+
+        setTimeout(showStuff, 2600);
+    </script>
+      <a href="https://warwicktech.substack.com/subscribe" class="button1" target="_blank">Subscribe to our Newsletter!</a>
+  </div>
     <a href="https://github.com/WarwickTECH/code-of-conduct" class="float" target="_blank">
       <i class="fa fa-users fa-2x my-float"></i>
     </a>
-  </div>
+</div>
 <script src="website/js/app.js"></script>
 <script type="text/javascript">
   // $(document).ready(function() {
@@ -44,6 +60,10 @@
 
 </script>
 <script type="text/javascript">
+
+
+
+
   $(document).ready(function() {
     var width = $(document).width();
     var a = $(document).width()/25;

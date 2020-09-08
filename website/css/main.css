@@ -122,6 +122,40 @@ padding-top: 20%;
   background-color: rgba(255, 255, 255, 0.075);
 }
 
+.button1 {
+  color: white;
+  border: 1px solid white;
+  font-size: 30px;
+  padding: 10px 1.8%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  margin: 3px 6px;
+  margin-right: 3px;
+  display: inline-block;
+  text-decoration: none;
+  width: 450px;
+  background-color: rgba(255,255,255, 0);
+  box-shadow: 0px 0px 2px #888;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition: background-color 300ms ease;
+  -moz-transition: background-color 300ms ease;
+  transition: background-color 300ms ease;
+  cursor: pointer;
+  -khtml-user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-animation: fadein 2s forwards; /* Safari, Chrome and Opera > 12.1 */
+  animation: fadein 2s forwards;
+}
+
+.button1:hover, .button1:active {
+  background-color: rgba(255, 255, 255, 0.075);
+}
+
 .float{
 	position:fixed;
 	width:60px;

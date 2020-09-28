@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>WarwickTECH</title>
@@ -14,6 +15,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="particles.min.js"></script>
 </head>
+
 <body>
   <div class="container">
     <!-- Iframe Container Start -->
@@ -26,32 +28,20 @@
     <!-- Iframe Container End -->
 
     <div id="particles-js"></div>
-    <div class="pad"></div>
-    <img class="display" src="website/warwicktech.png" alt="WarwickTECH logo">
 
-    <div class="eventBtn">
-      <a class="button" target="_blank">Flagship Events</a>
-      <a href="https://launchday.warwick.tech" target="_blank">
-        <img src="./website/event.png" alt="Warwick TECH‎ to Virtual Launch Day 2020" />
-        &nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="https://hack.warwick.tech" target="_blank">
-        <img src="./website/warwickhack.png" />
-        &nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="https://startupday.warwick.tech/" target="_blank">
-        <img src="./website/startupday.png" />
-      </a>
+    <div class="bannerContainer">
+      <img class="display" src="website/warwicktech.png" alt="WarwickTECH logo">
     </div>
-
     <!-- Button Box Start -->
-    <div class='box'>
-        <a href="https://www.facebook.com/pg/warwicktech/events/" class="button" target="_blank">All Events</a>
+    <div class='box buttonBox'>
+      <a href="https://www.facebook.com/pg/warwicktech/events/" class="button" target="_blank">All Events</a>
       <a href="https://twitter.com/WarwickTECH/lists/team/members" class="button" target="_blank">Team</a>
       <a href="https://twitter.com/WarwickTECH/lists/partners/members" class="button" target="_blank">Partners</a>
     </div>
     <!-- Button Box Start -->
 
     <!-- Social Media Box Start -->
-    <div class='box'>
+    <div class='box socialBox'>
       <a href="https://twitter.com/WarwickTECH/lists/Partners/members" target="_blank" class="social twitter"><i
           class="fab fa-twitter"></i></a>
       <a href="https://medium.com/warwick-tech" target="_blank" class="social medium"><i
@@ -68,7 +58,7 @@
       <a href="https://warwicktech.substack.com/subscribe" class="button1" target="_blank"> Subscribe to our
         Newsletter:</a>
       <div>
-        <iframe src="https://warwicktech.substack.com/embed" class="button1" width="100" height="100"
+        <iframe src="https://warwicktech.substack.com/embed" class="button1iframe" width="100" height="100"
           style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe></a>
       </div>
       <div id="fb-root"></div>
@@ -77,14 +67,34 @@
       </a>
     </div>
     <!-- Newsletter Box End -->
+
+    <div class='eventContainer'>
+      <p>Flagship Events</p>
+      <div class="eventsList">
+        <a href="https://launchday.warwick.tech" target="_blank" >
+          <img src="./website/event.png" alt="Warwick TECH‎ to Virtual Launch Day 2020" />
+        </a>
+
+        <a href="https://hack.warwick.tech" target="_blank">
+          <img src="./website/warwickhack.png" />
+        </a>
+
+        <a href="https://startupday.warwick.tech/" target="_blank">
+          <img src="./website/startupday.png" />
+        </a>
+
+      </div>
+    </div>
+
+
   </div>
 
   <script src="website/js/app.js"></script>
   <script type="text/javascript">
-    document.getElementById("some-button").style.display = "none";
-    function showStuff() {
-      document.getElementById("some-button").style.display = "block";
-    }
+    // document.getElementById("some-button").style.display = "none";
+    // function showStuff() {
+      // document.getElementById("some-button").style.display = "block";
+    // }
     setTimeout(showStuff, 2000);
     $(document).ready(function () {
 
@@ -113,11 +123,10 @@
     });
 
 
-    $('.iframecontainer iframe').load( function() {
+    $('.iframecontainer iframe').load(function () {
       $('.iframecontainer iframe').contents().find("._2p3a")
         .append($("<style type='text/css'>  ._2lqh{display:none;}  </style>"));
-  });
-
+    });
   </script>
 
 </body>

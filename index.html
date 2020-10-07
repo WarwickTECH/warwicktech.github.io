@@ -71,6 +71,7 @@
     <div class='eventContainer'>
       <p>Flagship Events</p>
       <div class="eventsList">
+          <div class="fade-in"">
         <a href="https://launchday.warwick.tech" target="_blank" >
           <img src="./website/event.png" alt="Warwick TECH‎ to Virtual Launch Day 2020" />
         </a>
@@ -82,6 +83,7 @@
         <a href="https://hack.warwick.tech" target="_blank">
           <img src="./website/warwickhack.png" />
         </a>
+    </div>
 
       </div>
     </div>
@@ -95,7 +97,10 @@
     // function showStuff() {
       // document.getElementById("some-button").style.display = "block";
     // }
-    setTimeout(showStuff, 2000);
+    // setTimeout(showStuff, 2000);
+    setTimeout(() => {
+      document.querySelector('.eventContainer').style.display = 'block';
+  },500);
     $(document).ready(function () {
 
       var width = $(document).width();
